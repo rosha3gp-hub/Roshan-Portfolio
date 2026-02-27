@@ -3,86 +3,86 @@ import { motion } from "motion/react";
 import { CurlyDecoration } from "../components/CurlyDecoration";
 
 export function Portfolio() {
-  const categories = ["All Vibes", "Mobile UX", "Web App UX", "Product Design", "User Research", "Design Systems"];
-  const [activeCategory, setActiveCategory] = useState("All Vibes");
+  const categories = ["All Projects", "Graphic Design", "UX/UI Design", "Motion Graphics", "Video Editing"];
+  const [activeCategory, setActiveCategory] = useState("All Projects");
 
   const projects = [
     {
       id: 1,
-      title: "The Spiral App 🌀",
-      category: "Mobile UX",
+      title: "Google Ads Content 🎯",
+      category: "Graphic Design",
       image: "https://images.unsplash.com/photo-1759266292888-e8709d1ce717?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWJyYW50JTIwZ3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDF8fHx8MTc3MTE0NDU3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Conversion up 34% with swirly-smooth checkout flow",
-      emoji: "🌈",
+      description: "Best in class Google Ads multimedia content",
+      emoji: "🎨",
     },
     {
       id: 2,
-      title: "Wave Dashboard 🌊",
-      category: "Web App UX",
+      title: "Interactive Chatbot ✨",
+      category: "UX/UI Design",
       image: "https://images.unsplash.com/photo-1714779573250-36242918e044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFic3RyYWN0JTIwd2F2ZXN8ZW58MXx8fHwxNzcxMTQ0NTc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Data viz that flows like waves, insights up 45%",
-      emoji: "📊",
+      description: "Optimized UX/UI for internal digital experiences",
+      emoji: "🤖",
     },
     {
       id: 3,
-      title: "Bounce Portal ✨",
-      category: "Product Design",
+      title: "Product Animations 🎬",
+      category: "Motion Graphics",
       image: "https://images.unsplash.com/photo-1750706888779-95b83a3173d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY29sb3JzJTIwZGVzaWdufGVufDF8fHx8MTc3MTE0NDU3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Healthcare portal with accessibility that bounces",
-      emoji: "💊",
+      description: "Compelling GIFs bringing complex info to life",
+      emoji: "💫",
     },
     {
       id: 4,
-      title: "Curly Finance 💰",
-      category: "Mobile UX",
+      title: "Instructional Videos 🎥",
+      category: "Video Editing",
       image: "https://images.unsplash.com/photo-1770197448864-18ab6c2c4894?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRybyUyMHJhaW5ib3clMjBhZXN0aGV0aWN8ZW58MXx8fHwxNzcxMTQ0NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Banking app with curly security patterns",
-      emoji: "🏦",
+      description: "Engaging voiceover scripts and clean edits",
+      emoji: "📺",
     },
     {
       id: 5,
-      title: "Vibe Research Study 🔬",
-      category: "User Research",
+      title: "Marketing Flowcharts 📊",
+      category: "Graphic Design",
       image: "https://images.unsplash.com/photo-1764506354210-46e42f575022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib2xkJTIwcGF0dGVybiUyMGRlc2lnbnxlbnwxfHx8fDE3NzExNDQ1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "200+ users, insights that curve expectations",
+      description: "Visual design materials and infographics",
       emoji: "🎯",
     },
     {
       id: 6,
-      title: "Spiral System 🎨",
-      category: "Design Systems",
+      title: "Pitch Presentations 📈",
+      category: "Graphic Design",
       image: "https://images.unsplash.com/photo-1756723903184-32fed816ea5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHdvcmtzcGFjZSUyMGNyZWF0aXZlfGVufDF8fHx8MTc3MTE0NDU3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Design system with curvy components",
-      emoji: "🧩",
+      description: "Visually engaging PowerPoint decks",
+      emoji: "📊",
     },
     {
       id: 7,
-      title: "Travel Twist 🛫",
-      category: "Web App UX",
+      title: "Brand Narratives 📝",
+      category: "Video Editing",
       image: "https://images.unsplash.com/photo-1759266292888-e8709d1ce717?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWJyYW50JTIwZ3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDF8fHx8MTc3MTE0NDU3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Booking flow with spiral optimization, -28% drop",
-      emoji: "✈️",
+      description: "Seamless narratives with stunning VFX",
+      emoji: "🎬",
     },
     {
       id: 8,
-      title: "Flex & Flow 💪",
-      category: "Mobile UX",
+      title: "Comic Portals 🦸",
+      category: "UX/UI Design",
       image: "https://images.unsplash.com/photo-1714779573250-36242918e044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFic3RyYWN0JTIwd2F2ZXN8ZW58MXx8fHwxNzcxMTQ0NTc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "Fitness app with bouncy gamification",
-      emoji: "🏃",
+      description: "Dynamic interfaces for comic platforms",
+      emoji: "🚀",
     },
     {
       id: 9,
-      title: "Learn & Spiral 📚",
-      category: "Product Design",
+      title: "AI Integrations 🤖",
+      category: "UX/UI Design",
       image: "https://images.unsplash.com/photo-1750706888779-95b83a3173d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY29sb3JzJTIwZGVzaWdufGVufDF8fHx8MTc3MTE0NDU3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      description: "EdTech with curly learning paths, +52% completion",
-      emoji: "🎓",
+      description: "Enhancing UX using cutting-edge AI tools",
+      emoji: "🧠",
     },
   ];
 
-  const filteredProjects = activeCategory === "All Vibes" 
-    ? projects 
+  const filteredProjects = activeCategory === "All Projects"
+    ? projects
     : projects.filter(project => project.category === activeCategory);
 
   return (
@@ -96,12 +96,12 @@ export function Portfolio() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="text-8xl mb-6">🌀</div>
+            <div className="text-8xl mb-6">🚀</div>
             <h1 className="text-6xl md:text-7xl font-bold mb-6">
-              The Spiral Gallery
+              Case Studies
             </h1>
             <p className="text-2xl text-white/95 max-w-3xl mx-auto">
-              Case studies showing how curly thinking creates smooth user experiences with serious bounce! 🚀
+              A gallery of visual design, motion graphics, and strategic projects spanning my career. 🎨
             </p>
           </motion.div>
         </div>
@@ -115,11 +115,10 @@ export function Portfolio() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-full transition-all transform hover:scale-110 font-bold ${
-                  activeCategory === category
+                className={`px-6 py-3 rounded-full transition-all transform hover:scale-110 font-bold ${activeCategory === category
                     ? "bg-purple-600 text-white shadow-xl"
                     : "bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 hover:bg-purple-100 dark:hover:bg-purple-900/30"
-                }`}
+                  }`}
               >
                 {category}
               </button>
@@ -132,7 +131,7 @@ export function Portfolio() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple-200 dark:bg-purple-900/20 rounded-full blur-3xl opacity-20" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/10 rounded-full blur-3xl opacity-20" />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
           {filteredProjects.map((project, index) => (
             <motion.div

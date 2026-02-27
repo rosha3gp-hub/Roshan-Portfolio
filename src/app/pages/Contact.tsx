@@ -15,7 +15,7 @@ export function Contact() {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
-    alert("Yo! Thanks for reaching out! I'll spiral back to you ASAP! 🌀");
+    alert("Thanks for reaching out! I'll get back to you soon. ✨");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
@@ -30,23 +30,23 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "curls@marcusrodriguez.design",
-      href: "mailto:curls@marcusrodriguez.design",
+      value: "rosha3.gp@gmail.com",
+      href: "mailto:rosha3.gp@gmail.com",
       emoji: "📧",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (305) 555-CURL",
-      href: "tel:+13055552875",
+      value: "+91 9345887390",
+      href: "tel:+919345887390",
       emoji: "📱",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Miami, FL (Where the curls thrive!)",
+      value: "Hyderabad, India",
       href: null,
-      emoji: "🌴",
+      emoji: "📍",
     },
   ];
 
@@ -63,10 +63,10 @@ export function Contact() {
           >
             <div className="text-8xl mb-6">💬</div>
             <h1 className="text-6xl md:text-7xl font-bold mb-6">
-              Let's Vibe Together!
+              Let's Connect!
             </h1>
             <p className="text-2xl text-white/95 max-w-3xl mx-auto">
-              Got a project that needs that curly energy? Need some UX magic? Let's spiral into something amazing! Drop me a message and let's make waves! 🌊
+              Have a project in mind or want to collaborate? I'd love to hear from you. Drop me a message! ✨
             </p>
           </motion.div>
         </div>
@@ -82,9 +82,9 @@ export function Contact() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="absolute -top-10 -left-10 text-6xl">🌀</div>
+            <div className="absolute -top-10 -left-10 text-6xl">🚀</div>
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              Send Me Some Vibes ✨
+              Send Me A Message ✨
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -99,7 +99,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border-2 border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-2xl focus:ring-4 focus:ring-purple-400 dark:focus:ring-purple-600 focus:border-purple-600 dark:focus:border-purple-400 outline-none transition"
-                  placeholder="Marcus Rodriguez..."
+                  placeholder="Bharath Roshan..."
                 />
               </div>
 
@@ -131,7 +131,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border-2 border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-2xl focus:ring-4 focus:ring-purple-400 dark:focus:ring-purple-600 focus:border-purple-600 dark:focus:border-purple-400 outline-none transition"
-                  placeholder="Let's build something curly!"
+                  placeholder="Let's build something amazing!"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export function Contact() {
                   required
                   rows={6}
                   className="w-full px-4 py-3 border-2 border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-2xl focus:ring-4 focus:ring-purple-400 dark:focus:ring-purple-600 focus:border-purple-600 dark:focus:border-purple-400 outline-none transition resize-none"
-                  placeholder="Tell me about your project and what kind of bounce you're looking for..."
+                  placeholder="Tell me about your project and what kind of design help you're looking for..."
                 />
               </div>
 
@@ -156,7 +156,7 @@ export function Contact() {
                 className="w-full bg-gradient-to-r from-purple-600 to-purple-500 dark:from-purple-700 dark:to-purple-600 text-white px-8 py-4 rounded-full hover:shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center gap-2 font-bold text-lg"
               >
                 <Sparkles size={24} />
-                Send Those Vibes!
+                Send Message!
                 <Send size={20} />
               </button>
             </form>
@@ -171,17 +171,17 @@ export function Contact() {
           >
             <div className="absolute -top-10 -right-10 text-6xl animate-spin-slow">✨</div>
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              Hit Me Up! 📲
+              Get In Touch 📲
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-              Always down to chat about UX, curly hair care routines, or your next big project. 
-              I typically spiral back within 24 hours! ⚡
+              Always open to discussing new opportunities, creative strategies, or just grabbing a coffee.
+              I typically reply within 24 hours! ⚡
             </p>
 
             <div className="space-y-6 mb-12">
               {contactInfo.map((info) => (
-                <motion.div 
-                  key={info.label} 
+                <motion.div
+                  key={info.label}
                   className="flex items-start gap-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-2xl border-2 border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all"
                   whileHover={{ scale: 1.02, x: 5 }}
                 >
@@ -205,17 +205,17 @@ export function Contact() {
               ))}
             </div>
 
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-br from-purple-600 to-purple-500 dark:from-purple-800 dark:to-purple-700 text-white rounded-3xl p-8 relative overflow-hidden"
               whileHover={{ scale: 1.02 }}
             >
-              <div className="absolute top-0 right-0 text-6xl opacity-20">🌀</div>
-              <h3 className="font-bold text-2xl mb-4">My Vibe Hours ⏰</h3>
+              <div className="absolute top-0 right-0 text-6xl opacity-20">🚀</div>
+              <h3 className="font-bold text-2xl mb-4">Availability ⏰</h3>
               <div className="space-y-2 text-white/95">
-                <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                <p>Weekends: Curl care & creative thinking 💭</p>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                <p>Weekends: Exploring new AI tools 💭</p>
                 <p className="mt-4 text-sm font-bold text-purple-200">
-                  Currently taking on curly projects for Q2 2026! 🚀
+                  Currently open for new collaborations! 🚀
                 </p>
               </div>
             </motion.div>
@@ -233,20 +233,20 @@ export function Contact() {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              Ready to Add Some Bounce? 🌊
+              Ready to Collaborate? ✨
             </h2>
             <p className="text-2xl mb-8 text-gray-700 dark:text-gray-300">
-              Let's collaborate and create UX experiences that flow as naturally as curls on a humid day! No straight lines, just smooth spirals! 🎨
+              Let's combine strategic thinking with stunning visual design to build something great! 🎨
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/portfolio"
                 className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-purple-600 dark:border-purple-400 text-purple-600 dark:text-purple-400 rounded-full hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-all transform hover:scale-110 font-bold shadow-xl"
               >
-                Check My Spirals 🌀
+                View Portfolio 🎨
               </a>
               <a
-                href="mailto:curls@marcusrodriguez.design"
+                href="mailto:rosha3.gp@gmail.com"
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 dark:from-purple-700 dark:to-purple-600 text-white rounded-full hover:shadow-2xl transition-all transform hover:scale-110 font-bold"
               >
                 Email Me Directly 📧

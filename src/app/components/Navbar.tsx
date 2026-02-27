@@ -26,12 +26,12 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <span className="text-4xl transition-transform group-hover:rotate-180 duration-500">🌀</span>
+              <span className="text-4xl transition-transform group-hover:rotate-180 duration-500">✨</span>
               <span className="hidden sm:inline text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-                Marcus Rodriguez
+                Bharath Roshan GP
               </span>
               <span className="sm:hidden text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-                MR
+                BR
               </span>
             </Link>
 
@@ -41,16 +41,15 @@ export function Navbar() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-4 py-2 rounded-lg transition-all ${
-                    isActive(link.path)
+                  className={`px-4 py-2 rounded-lg transition-all ${isActive(link.path)
                       ? "bg-purple-600 text-white"
                       : "text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              
+
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
@@ -89,11 +88,10 @@ export function Navbar() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-2 px-4 rounded-lg ${
-                    isActive(link.path)
+                  className={`block py-2 px-4 rounded-lg ${isActive(link.path)
                       ? "bg-purple-600 text-white"
                       : "text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>

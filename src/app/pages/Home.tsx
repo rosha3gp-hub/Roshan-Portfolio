@@ -33,7 +33,7 @@ export function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-100 dark:from-gray-900 dark:via-purple-950 dark:to-gray-900">
         <CurlyDecoration />
-        
+
         {/* Animated curly lines */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
@@ -67,7 +67,7 @@ export function Home() {
             transition={{ duration: 0.8, type: "spring" }}
             className="mb-6"
           >
-            <span className="text-9xl">🌀</span>
+            <span className="text-9xl">🚀</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export function Home() {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent"
           >
-            Curly Hair, Curvy Flows
+            Visual Designer & Creative Strategist
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl md:text-3xl mb-8 text-gray-700 dark:text-gray-300"
           >
-            Yo! I'm Marcus "Curls" Rodriguez—a UX Designer who designs experiences as dynamic and bouncy as my curls. No straight lines here, just smooth spirals and funky flows! 🎨
+            Hello! I'm Bharath Roshan GP—a Visual Designer and Creative Strategist bridging technical strategy, scriptwriting, and graphic design to drive user success. 🎨
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -128,7 +128,7 @@ export function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-purple-200 dark:bg-purple-900/20 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/10 rounded-full blur-3xl opacity-50" />
-        
+
         <div className="text-center mb-16 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -136,10 +136,10 @@ export function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              My Wavy Portfolio 🌊
+              Featured Projects 🚀
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-xl">
-              Recent projects with extra bounce and personality
+              Recent work bridging design, technical strategy, and motion graphics
             </p>
           </motion.div>
         </div>
@@ -172,7 +172,7 @@ export function Home() {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           className="text-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -182,7 +182,7 @@ export function Home() {
             to="/portfolio"
             className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white border-4 border-purple-600 px-8 py-4 rounded-full hover:shadow-2xl transition-all transform hover:scale-110 font-bold"
           >
-            See All The Spirals
+            View All Projects
             <ArrowRight size={20} />
           </Link>
         </motion.div>
@@ -197,9 +197,9 @@ export function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">Let's Make Some Waves! 🌊</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">Let's Create Something Amazing! ✨</h2>
             <p className="text-2xl mb-8 text-white/95">
-              Got a project that needs that curly energy? Let's spiral into something amazing together!
+              Got a project that needs a creative and strategic touch? Let's work together to bring your vision to life!
             </p>
             <Link
               to="/contact"

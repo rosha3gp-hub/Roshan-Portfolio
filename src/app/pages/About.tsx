@@ -4,21 +4,21 @@ import { CurlyDecoration } from "../components/CurlyDecoration";
 
 export function About() {
   const skills = [
-    "User Research 🔍",
-    "User Interviews 💬",
-    "Usability Testing ✅",
-    "Wireframing 📐",
-    "Prototyping 🎨",
-    "Info Architecture 🏗️",
-    "Interaction Design ✨",
-    "Design Systems 🌈",
+    "Graphic Design 🎨",
+    "UX/UI Design ✨",
+    "Motion Graphics 🎬",
+    "Video Editing 🎥",
+    "Design Thinking 🧠",
+    "Video Scripting 📝",
+    "Prompt Engineering 🤖",
+    "AI Tools Integration ⚙️",
   ];
 
   const stats = [
-    { icon: Award, label: "Years Vibing", value: "6+", emoji: "🎉" },
-    { icon: Users, label: "Users Vibed With", value: "500+", emoji: "👥" },
-    { icon: Palette, label: "Curly Projects", value: "75+", emoji: "🌀" },
-    { icon: Target, label: "Bounce Rate", value: "+99%", emoji: "🚀" },
+    { icon: Award, label: "Years Experience", value: "10+", emoji: "🏆" },
+    { icon: Users, label: "Projects Completed", value: "100+", emoji: "📈" },
+    { icon: Palette, label: "AI Tools Mastered", value: "10+", emoji: "🤖" },
+    { icon: Target, label: "Brand Accuracy", value: "100%", emoji: "🎯" },
   ];
 
   return (
@@ -32,24 +32,16 @@ export function About() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              The Curly Chronicles 🌀
+              About Me 🚀
             </h1>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              Yo! I'm Marcus "Curls" Rodriguez, a UX Designer based in Miami with hair as dynamic 
-              as my design process. With 6+ years of experience creating digital experiences that 
-              bounce, flow, and spiral in all the right ways, I bring that curly hair energy to 
-              every project! 💫
+              Hello! I'm Bharath Roshan GP, a Visual Designer and Creative Strategist with a B.Tech in Automobile Engineering and extensive experience in design. With a strong background bridging technical strategy, scriptwriting, and graphic design, I drive user success and platform engagement. ✨
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              My approach? Like managing curly hair, great UX requires patience, understanding, 
-              and the right technique. I dive deep into user research, embrace the messy middle 
-              of ideation, and always iterate until things flow naturally. No two curls are the 
-              same, and no two users are either! 🎨
+              I have managed the end-to-end creative lifecycle for best in class Google Ads multimedia content. I leverage advanced proficiency in Adobe Creative Suite, Figma, and AI tools to create compelling visual narratives. From informational videos to interactive Chatbot interfaces, I bring complex product information to life. 🎨
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              When I'm not designing wavy experiences, you'll find me at the barber shop talking 
-              curl patterns, teaching design workshops, or experimenting with new prototype tools. 
-              Life's too short for straight lines and boring interfaces! ✨
+              When I'm not designing, I'm exploring the latest AI tools, motion design techniques, and video editing frameworks, constantly expanding my creative toolkit. Through tools like Lovable, Framer, and Notebook LLM, I stay at the cutting edge of design tech. 🚀
             </p>
           </motion.div>
 
@@ -65,7 +57,7 @@ export function About() {
                 alt="Curly UX workspace"
                 className="rounded-2xl w-full"
               />
-              <div className="absolute -top-4 -right-4 text-8xl animate-bounce">🌀</div>
+              <div className="absolute -top-4 -right-4 text-8xl animate-bounce">✨</div>
             </div>
           </motion.div>
         </div>
@@ -97,13 +89,13 @@ export function About() {
       {/* Skills Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200 dark:bg-purple-900/20 rounded-full blur-3xl opacity-30" />
-        
+
         <div className="text-center mb-12 relative">
           <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-            My Spiral Skill Set 🎯
+            My Technical Skills 🎯
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-xl">
-            All the moves in my design toolkit
+            Tools and expertise in my design arsenal
           </p>
         </div>
 
@@ -130,10 +122,10 @@ export function About() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent">
-              The Curly UX Flow 🌊
+              My Creative Process ✨
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-xl">
-              Like defining curls, my process has bounce and structure
+              A structured approach from concept to delivery
             </p>
           </div>
 
@@ -142,26 +134,26 @@ export function About() {
               {
                 step: "01",
                 emoji: "🔬",
-                title: "Research & Discover",
-                description: "Getting to know users like I know my curl pattern",
+                title: "Research & Strategy",
+                description: "Understanding user needs and technical requirements",
               },
               {
                 step: "02",
                 emoji: "💡",
-                title: "Define & Ideate",
-                description: "Shaping ideas like styling curls—with intention",
+                title: "Concept & Scripting",
+                description: "Crafting narratives and storyboards for visual content",
               },
               {
                 step: "03",
                 emoji: "🎨",
-                title: "Design & Spiral",
-                description: "Creating flows that bounce and feel natural",
+                title: "Design & Animation",
+                description: "Creating high-impact visuals and motion graphics",
               },
               {
                 step: "04",
                 emoji: "✅",
-                title: "Test & Iterate",
-                description: "Refining until everything has that perfect bounce",
+                title: "Review & Deliver",
+                description: "Ensuring 100% accuracy and strict brand adherence",
               },
             ].map((phase, index) => (
               <motion.div
